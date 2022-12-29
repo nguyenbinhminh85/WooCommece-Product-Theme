@@ -1,0 +1,68 @@
+
+.form-control{
+    margin-bottom: 1rem;
+}
+
+.form-control h4{
+    margin-bottom: 0.25rem;
+}
+
+.form-control .field-button{
+    outline: none;
+    border: dashed 1px #111;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-control .field-button:hover{
+    transform: scale(0.95);
+    border: dashed 1px rgba(0, 0 ,0 , 0.6);
+    background-color: rgba(255, 255 , 255, 0.6);
+}
+
+.add_more_field, .save_data_field{
+    outline: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.save_data_field{
+    margin-bottom: 2rem;
+}
+
+.collection-default-item, .collection-item{
+    margin: 1rem auto;
+    background-color: rgba(0, 0 ,0 , 0.1);
+    padding: 0.25rem;
+    position: relative;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
+
+.delete-collection-item {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.delete-collection-item:hover{
+    background-color: rgba(255, 255 , 255, 0.6);
+}
+
+
+

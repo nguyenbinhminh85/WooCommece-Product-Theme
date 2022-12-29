@@ -1,0 +1,74 @@
+.item-address-contact-info-default{
+    display: none;
+}
+
+.company-info{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.description{
+    font-style: italic;
+}
+
+.section-info h3{
+    padding: 0;
+}
+
+.section-info{
+    margin-bottom: 10px;
+}
+
+.item-address-contact-info{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.item-address-contact-info .delete-item{
+    padding: 5px;
+    border-bottom: thin solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: end;
+}
+
+.item-address-contact-info .delete-item p{
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+.item-address-contact-info .delete-item p:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+
+.save-company-item{
+    outline: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.save_icon_data{
+    margin-bottom: 2rem;
+}
+
+.add-item-address-contact-info{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.add-more-company-item{
+    outline: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}

@@ -1,0 +1,64 @@
+
+.social_media_section{
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 5px;
+}
+
+.social_media_section h3{
+  margin: 0;
+  padding: 0 ;
+}
+
+.social_media_section p{
+   margin-top: 1px;
+  }
+  
+
+.add_social_media_section{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.icon-media{
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+.media-item{
+    margin-bottom: 0.75rem;
+}
+
+.delete_media_icon{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: thin solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.delete_media_icon div{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete_media_icon:hover div{
+   background-color: rgba(0, 0, 0, 0.3);
+   border-radius: 50%;
+}
+
+.add_more_icon, .save_icon_data{
+    outline: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.save_icon_data{
+    margin-bottom: 2rem;
+}

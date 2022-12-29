@@ -1,0 +1,84 @@
+
+
+.save_data_service, .add_more_service{
+    outline: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.save_data_service{
+    margin-bottom: 2rem;
+}
+
+.authorized-default-item, .authorized-item{
+    margin: 1rem auto;
+    background-color: rgba(0, 0 ,0 , 0.1);
+    padding:2.5rem 0.5rem 0.5rem 0.5rem;
+    position: relative;
+}
+
+
+.delete-authorized-item{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.delete-authorized-item:hover{
+    background-color: rgba(255, 255 , 255, 0.6);
+}
+
+.card_content{
+    resize: none;
+    width: 100%;
+ }
+
+ .about-card-standard, .about-card{
+   background-color: rgba(0, 0, 0, 0.1);
+   padding: 8px;
+   margin: 16px 0;
+ }
+
+
+ .delete-about-card{
+   display: flex;
+   justify-content: flex-end;
+   max-width: 100%;
+ }
+
+ .delete-about-card div{
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ .delete-about-card div:hover{
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ .title-item{
+   margin-bottom: 8px;
+ 
+ }
+
+.card_info{
+  margin-top: 8px;
+}
+
+
