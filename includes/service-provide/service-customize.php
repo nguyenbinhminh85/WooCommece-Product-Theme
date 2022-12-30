@@ -14,7 +14,7 @@ function register_service_javascript(){
 
             ?>
 
-            <input type="text" id="service_front_page_value" value="" <?php echo $this->link(); ?>>
+            <input type="hidden" id="service_front_page_value" value="" <?php echo $this->link(); ?>>
             <?php wp_nonce_field("service_front_page_nonce_action", "service_front_page_nonce_name") ?>
 
         <?php
@@ -52,29 +52,31 @@ function register_service_javascript(){
                         </div>
                     </div>
                 <?php else: ?>
-                    <?php foreach($datas as $data): ?>
+                    <?php if(is_array($datas)): ?>
+                        <?php foreach($datas as $data): ?>
 
-                        <div class="about-card" style="display: block;">
-                            <div class="delete-about-card">
-                                <div>X</div>
-                            </div>        
-                            <div class="title-item">
-                                <label for="card_icon"> Add Card font awesome class icon: </label>
-                                <input type="text" id="card_icon" class="card_info" value="<?=$data['icon']?>" placeholder="fa-brands fa-facebook">
+                            <div class="about-card" style="display: block;">
+                                <div class="delete-about-card">
+                                    <div>X</div>
+                                </div>        
+                                <div class="title-item">
+                                    <label for="card_icon"> Add Card font awesome class icon: </label>
+                                    <input type="text" id="card_icon" class="card_info card_icon" value="<?=$data['icon']?>" placeholder="fa-brands fa-facebook">
+                                </div>
+
+                                <div class="title-item">
+                                    <label for="card_title">Add Card Title:</label>
+                                    <input type="text" id="card_title" class="card_info card_title" value="<?=$data['title']?>" placeholder="Your Card Title">
+                                </div>
+
+                                <div class="title-item">
+                                    <label for="card_content">Add Card Content:</label>
+                                    <textarea name="card_content" id="card_content" class="card_content card_info" cols="10" placeholder="Your Card Content"><?=$data['content']?></textarea>
+                                </div>
                             </div>
 
-                            <div class="title-item">
-                                <label for="card_title">Add Card Title:</label>
-                                <input type="text" id="card_title" class="card_info" value="<?=$data['title']?>" placeholder="Your Card Title">
-                            </div>
-
-                            <div class="title-item">
-                                <label for="card_content">Add Card Content:</label>
-                                <textarea name="card_content" id="card_content" class="card_content card_info" cols="10" placeholder="Your Card Content"><?=$data['content']?></textarea>
-                            </div>
-                        </div>
-
-                    <?php endforeach; ?>   
+                        <?php endforeach; ?>   
+                    <?php endif; ?>
                 <?php endif; ?>
 
                     <div class="about-card-standard" style="display: none;">
@@ -204,7 +206,7 @@ class Add_front_page_service_provide{
           ) );   
       
         $wp_customize->add_control( 'front_page_service_text_content_setting_id', array(
-            'type' => 'text',
+            'type' => 'textarea',
             'priority' => 30,
             'section' => 'front_page_service_text_section_id',
             'label' => __( 'Add Content' ),

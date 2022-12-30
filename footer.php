@@ -80,8 +80,8 @@
                     <div class="company-address-title">
                         <h5><?php echo $title ?></h5>
                     </div>
-
-                    <?php foreach($company_infos as $key =>$company_info):?>
+                    <?php if(!empty($company_infos) && is_array($company_infos)): ?>
+                        <?php foreach($company_infos as $key =>$company_info):?>
                         
                             <div class="company-info">
                                 <h5><?php echo $company_info[0]['title'] ?></h5>
@@ -99,8 +99,8 @@
                                 </div>
                             </div>
                            
-                    <?php endforeach; ?>
-
+                        <?php endforeach; ?>
+                    <?php endif; ?>        
                 </div>
             <!--  Footer 3 -->
 

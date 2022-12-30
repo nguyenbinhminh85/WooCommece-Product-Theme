@@ -13,7 +13,7 @@ function register_authorized_javascript(){
 
             ?>
 
-                <input type="text" id="authorized_front_page_value" value="" <?php echo $this->link(); ?>>
+                <input type="hidden" id="authorized_front_page_value" value="" <?php echo $this->link(); ?>>
                 <?php wp_nonce_field("authorized_front_page_nonce_action", "authorized_front_page_nonce_name") ?>
 
             <?php

@@ -374,7 +374,7 @@
 
                                   
                     ?>
-                    <?php if(!empty($datas)): ?>
+                    <?php if(!empty($datas) && is_array($datas)): ?>
 
                         <div class="authorized_distributor row row-cols-1 row-cols-md-5 g-5"> 
                             <?php foreach($datas as $data): ?>
@@ -434,11 +434,13 @@
                             $values_service = get_theme_mod("front_page_service_setting_id", "Nothing");
                         
                             $datas = maybe_unserialize($values_service);
+
+                            //print_r( $datas);
                             
-                            $service_num = count($datas);
+                            //$service_num = count($datas);
                                     
                         ?>
-                        <?php if(!empty($datas)): ?>
+                        <?php if(!empty($datas) && is_array($datas)): ?>
 
                             <div class="service-provide mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5"> 
                                 <?php foreach($datas as $data): ?>

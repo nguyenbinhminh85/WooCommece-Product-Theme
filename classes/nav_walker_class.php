@@ -226,11 +226,15 @@ class Main_Nav_Menu extends Walker {
 		 */
 		$title = apply_filters( 'nav_menu_item_title', $title, $menu_item, $args, $depth );
 
-		$item_output  = $args->before;
-		$item_output .= '<a' . $attributes . '>';
-		$item_output .= $args->link_before . $title . $args->link_after;
-		$item_output .= '</a>';
-		$item_output .= $args->after;
+		$item_output  = "";
+
+		if(isset($args->before)){
+			$item_output  = $args->before;
+			$item_output .= '<a' . $attributes . '>';
+			$item_output .= $args->link_before . $title . $args->link_after;
+			$item_output .= '</a>';
+			$item_output .= $args->after;
+		}
 
 		/**
 		 * Filters a menu item's starting output.

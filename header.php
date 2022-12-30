@@ -65,14 +65,18 @@
                             </li>
                         </ul> -->
                         <?php
-                            wp_nav_menu(array(
-                                  'theme_location'  => 'main_menu',
-                                  'container'       => "",
-                                  'menu_class'      => "navbar-nav ms-auto mb-2 mb-lg-0",
-                                  'menu_id'         => "",
-                                  'walker'          => new Main_Nav_Menu(),  
-                            ));
+                            
+                            $nav_args = array(
+                                'theme_location'  => 'main_menu',
+                                'container'       => "",
+                                'menu_class'      => "navbar-nav ms-auto mb-2 mb-lg-0",
+                                'menu_id'         => "",
+                                'walker'          => new Main_Nav_Menu(),  
+                            );
 
+                           
+                            wp_nav_menu($nav_args);
+                            
                         ?>
                     
                     </div>
@@ -258,7 +262,6 @@
             </section>
 
         <?php endif; ?>
-
 
 
 <style>
